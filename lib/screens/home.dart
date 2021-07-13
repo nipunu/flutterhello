@@ -7,12 +7,31 @@ class home extends StatelessWidget{
         color: Colors.deepPurple,
         child: Center(
           child: Text(
-            "Hello Flutter",
+            sayHello(),
             textDirection: TextDirection.ltr,
             style: TextStyle(color: Colors.white, fontSize: 36.0),
           ),
         ),
       );
+  }
+
+  String sayHello(){
+    String hello;
+    DateTime now  = new DateTime.now();
+    int hour = now.hour;
+
+    if(hour < 12 ){
+      hello = "Good morning";
+    }
+    else if(hour < 18){
+      hello = "Good afternoon";
+    }
+    else{
+      hello = "Good evening";
+    }
+
+    return hello;
+
   }
 
 }

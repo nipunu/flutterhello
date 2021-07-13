@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:hello_flutter/screens/home.dart';
-
+//this is the helloFlutterApp
 class HelloFlutterApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
